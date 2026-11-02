@@ -621,3 +621,50 @@ footer {
     .java-box { right: -5px; }
     .code-box { left: -5px; }
 }
+
+
+/* Resume Download Button */
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 16px 28px;
+    margin-left: 15px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+    background: linear-gradient(135deg, #a78bfa, #38bdf8);
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.25);
+
+    transition: all 0.35s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+    color: #ffffff;
+}
+
+.download-icon {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.resume-btn:hover .download-icon {
+    transform: translateY(4px);
+}
+
+@media (max-width: 600px) {
+    .resume-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
